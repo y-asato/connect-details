@@ -369,6 +369,7 @@ main {
     background-color: #EFBC30;
 }
 .recruitDetails__section__ttl p {
+    font-weight: 800;
     font-size: 1.5vw;
     margin-top: 3vw;
     margin-bottom: 0.8vw;
@@ -784,6 +785,7 @@ main {
         font-size: 3.5vw;
         letter-spacing: 0.5vw;
         padding-bottom: 90vw;
+        margin: 0 auto;
     }
     .recruitDetails__right__ttl {
         margin-top: 80px;
