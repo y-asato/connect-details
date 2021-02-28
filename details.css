@@ -1,0 +1,826 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+/* 以下から記入 */
+
+/* 共通のCSS */
+.flex {
+    display: flex;
+}
+html {
+    font-size: 10px;
+    background-color: #EFEDED;
+}
+main {
+    margin: 0 auto;
+    width: 95%;
+    background-color: #fff;
+}
+.letter-space-10 {
+    letter-spacing: 0.5vw;
+}
+
+.fundDetails-item {
+    letter-spacing: 0.5vw;
+}
+
+/* Header */
+#header {
+    height: 100px;
+    background-color: #fff;
+    box-shadow: 0 4px 4px #cccccc;
+    position: relative;
+}
+.header__nav {
+    justify-content: flex-end;
+    padding: 25px 0;
+}
+.header__nav__item {
+    list-style: none;
+    width: 15vw;
+    height: 50px;
+    text-align: center;
+    margin-right: 2vw;
+    line-height: 50px;
+    font-weight: bold;
+    font-size: 1.2vw;
+}
+.header__nav__item a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.header__nav__search {
+    background-color: #EFBC30;
+}
+.header__nav__contact {
+    background-color: #556773;
+}
+.drawer-hamburger {
+    display: none;
+}
+
+/* searchBox */
+.searchBox {
+    width: 35vw;
+    position: absolute;
+    top: 25%;
+    left: 5%;
+}
+#sbox {
+    width: 90vw;
+    height: 47px;
+    padding: 0 10px;
+    background-color: #EFEDED;
+    border: none;
+    border-radius: 40px;
+    box-shadow: 0 1px 6px 0 rgba(32, 33, 36, .28);
+    position: relative;
+    outline: 0;
+}
+#sbtn {
+    width: 10vw;
+    height: 47px;
+    background-color: #EFEDED;
+    border: none;
+    border-radius: 25px;
+    box-shadow: 0 1px 6px 0 rgba(32, 33, 36, .28);
+    position: absolute;
+    right: 0;
+    font-size: 1.2vw;
+    letter-spacing: 0.4vw;
+    padding: 10px 0;
+    text-align: center;
+}
+#sbtn:hover {
+    color:#EFBC30;
+}
+
+/* details__ttl */
+.fundDetails__ttl {
+    margin: 0 auto;
+    padding-top: 30px;
+    font-size: 2vw;
+    text-align: center;
+}
+
+/* fundDetails */
+.fundDetails__contents {
+    margin: 0 auto;
+    justify-content: space-evenly;
+    text-align: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+/* graph */
+.graph {
+    width: 30vw;
+    height: 1.7vw;
+    line-height: 1.75vw;
+    margin: 0 auto;
+    font-size: 1.5vw;
+    color: #f0ffff;
+    font-weight: 600;
+    border: 1px solid black;
+}
+.bar {
+    display: block;
+}
+.bar-100per {
+    background-color: #EFBC30;
+}
+.status,
+.graph {
+    margin-top: 10px;
+}
+
+/* recruit , details , status */
+.recruit,
+.details,
+.status {
+    margin: 15px auto;
+    font-weight: bold;
+    font-family: 'Shippori Mincho B1', serif;
+    line-height: 2vw;
+    font-size: 1.5vw;
+}
+.details th {
+    text-align: right;
+}
+.details td {
+    text-align: left;
+}
+
+.details-flex {
+    justify-content: space-around;
+    font-size: 2.5vw;
+    font-weight: 700;
+    color: #556773;
+    line-height: 5vw;
+}
+.details-flex span {
+    font-size: 1.3vw;
+    position: relative;
+}
+.details-flex p {
+    margin-left: 1.5vw;
+}
+.details-flex span:before {
+    content: "";
+    position: absolute;
+    left: 42%;
+    bottom: -1.3vw;
+    display: inline-block;
+    width: 1vw;
+    height: 5px;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    background-color: #556773;
+}
+
+/* details__overview__list */
+.details__overview__list {
+    padding: 10px 30px;
+    list-style: none;
+    margin: 60px auto;
+}
+.details__overview__list li {
+    display: block;
+    width: 12.5%;
+    height: 4vw;
+    font-size: 1.5vw;
+    line-height: 4.4vw;
+    text-align: center;
+    background-color: #DEF7E3;
+    color: #fff;
+}
+.details__overview__list li:first-of-type {
+    background-color: #556773;
+}
+
+/* fundDetails__details */
+.fundDetails__details {
+    justify-content: space-around;
+}
+.fundDetails__details__item {
+    font-size: 1vw;
+    letter-spacing: 0.3vw;
+}
+.recruitDetails-left,
+.recruitDetails-right {
+    width: 49%;
+}
+
+/* recruitDetails-left */
+.recruitDetails-left {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 30px;
+}
+.recruitDetails__section__ttl h2 {
+    font-size: 2vw;
+    letter-spacing: 1vw;
+    text-align: center;
+    position: relative;
+}
+.recruitDetails__section__ttl h2:before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -0.8vw;
+    display: inline-block;
+    width: 100%;
+    height: 0.3vw;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    background-color: #EFBC30;
+}
+.recruitDetails__txt {
+    font-size: 1.2vw;
+    letter-spacing: 0.6vw;
+    line-height: 1.3vw;
+    width: 100%;
+    margin: 1.5vw auto;
+}
+.recruitDetails__section {
+    width: 100%;
+    margin: 1.5vw auto;
+}
+.recruitDetails__section__ttl {
+    font-size: 1.5vw;
+    color: #EFBC30;
+}
+.recruitDetails__section__ttl h3 {
+    margin-top: 3vw;
+    margin-bottom: 1.5vw;
+    position: relative;
+}
+.recruitDetails__section__ttl h3:before {
+    content: "";
+    position: absolute;
+    left: 5%;
+    bottom: -0.7vw;
+    display: inline-block;
+    width: 7%;
+    height: 0.3vw;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    background-color: #EFBC30;
+}
+.recruitDetails__section__ttl p {
+    font-size: 1.5vw;
+    margin-top: 3vw;
+    margin-bottom: 0.8vw;
+}
+.recruitDetails__section__txt {
+    letter-spacing: 0.6vw;
+    line-height: 1.3vw;
+}
+
+.recruitDetails__contents {
+    margin-bottom: 15vw;
+}
+
+/* recruitDetails-right */
+.recruitDetails-right {
+    font-size: 1.2vw;
+    letter-spacing: 0.5vw;
+}
+.recruitDetails__right__ttl {
+    margin: 0 auto;
+    color: #556773;
+    font-size: 2vw;
+    margin-bottom: 2vw;
+    text-align: start;
+    width: 80%;
+}
+.recruitDetails-right table {
+    width: 80%;
+    margin: 0 auto;
+}
+.recruitDetails-right tr {
+    height: 3.5vw;
+    line-height: 3.5vw;
+    font-weight: 400;
+}
+.recruitDetails-right tr:nth-child(odd) {
+    background-color: #DEF7E3;
+}
+.recruitDetails-right th {
+    background-color: #556773;
+    color: #fff;
+}
+.recruitDetails-right td {
+    width: 100%;
+    text-align: center;
+    color: #6A7A84;
+    font-weight: bolder;
+}
+
+/* Footer */
+#footer {
+    background: #556773;
+    text-align: center;
+    color: #fff;
+    height: 120px;
+}
+.cont {
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+#footer .c-btn,
+#footer .nav {
+    font-size: 20px;
+}
+#footer .nav li a {
+    padding: 15px;
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: 5px;
+}
+#footer .c-btn {
+    padding: 5px 25px;
+    margin-left: 25px;
+    background-color: #fff;
+}
+#footer .c-btn a {
+    text-decoration: none;
+    color: #556773;
+    letter-spacing: 5px;
+}
+
+#footer .c-btn:hover,
+#footer .c-btn a:hover {
+    background-color: #EFBC30;
+    color: #fff;
+}
+
+#footer .wrap,
+#footer .cont {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    align-items: center;
+}
+#footer .wrap {
+    padding: 20px 0;
+    justify-content: space-between;
+}
+#footer .cont {
+    margin-top: 20px;
+    flex-direction: row-reverse;
+}
+
+#footer .nav,
+#footer .nav li {
+    display: inline-block;
+}
+#footer .nav li a:hover {
+    color: #EFBC30;
+}
+.copyright {
+    margin-top: -20px;
+    letter-spacing: 4px;
+    font-size: 16px;
+}
+
+
+/*   タブレット用レイアウト   */
+@media only screen and (max-width: 768px) {
+
+    /* 共通設定 */
+
+
+    /* ヘッダー部分 */
+    #header {
+        height: 70px;
+    }
+    .header__nav {
+        padding: 10px 0;
+    }
+    .header__nav__item {
+        width: 120px;
+        height: 50px;
+        margin-right: 15px;
+        line-height: 50px;
+        letter-spacing: 0.2rem;
+        font-size: 12px;
+    }
+    .header__nav__contact {
+        margin-right: 30px;
+    }
+
+    .searchBox {
+        width: 35%;
+        top: 15px;
+        left: 5%;
+    }
+    #sbox {
+        height: 40px;
+    }
+    #sbtn {
+        width: 35%;
+        height: 40px;
+        right: -30px;
+        letter-spacing: 5px;
+        font-size: 14px;
+    }
+
+    /* details__ttl */
+    .fundDetails__ttl {
+        font-size: 3.5vw;
+    }
+
+    /* fundDetails */
+    .fundDetails__contents {
+        display: block;
+    }
+    /* graph */
+    .graph {
+        height: 2.5vw;
+        line-height: 2.58vw;
+        font-size: 2vw;
+    }
+
+    /* recruit , details */
+    .recruit,
+    .details,
+    .status {
+        line-height: 4vw;
+        font-size: 3vw;
+        margin-bottom: 4vw;
+    }
+
+    .details-flex {
+        justify-content: space-evenly;
+        font-size: 6vw;
+        line-height: 9vw;
+    }
+    .details-flex span {
+        font-size: 3vw;
+    }
+    .details-flex p {
+        margin-left: 0;
+    }
+    .details-flex span:before {
+        bottom: -1.5vw;
+        width: 3.5vw;
+        height: 5px;
+    }
+
+    /* details__overview__list */
+    .details__overview__list {
+        margin: 30px auto;
+    }
+    .details__overview__list li {
+        width: 10.6vw;
+        height: 6vw;
+        font-size: 1.7vw;
+        line-height: 6vw;
+    }
+
+    /* fundDetails__details */
+    .fundDetails__details__item {
+        font-size: 2vw;
+    }
+
+    /* recruitDetails-left */
+    .recruitDetails__section__ttl h2 {
+        font-size: 3.5vw;
+    }
+    .recruitDetails__txt {
+        font-size: 2vw;
+        line-height: 2.2vw;
+    }
+    .recruitDetails__section__ttl {
+        font-size: 2.5vw;
+    }
+    .recruitDetails__section__ttl p {
+        font-size: 2.4vw;
+    }
+    .recruitDetails__section__txt {
+        line-height: 2.2vw;
+    }
+
+    /* recruitDetails-right */
+    .recruitDetails-right {
+        font-size: 1.8vw;
+        letter-spacing: 0.1vw;
+    }
+    .recruitDetails__right__ttl {
+        font-size: 3.5vw;
+        margin-bottom: 1vw;
+    }
+    .recruitDetails-right table {
+        width: 90%;
+    }
+    .recruitDetails-right tr {
+        height: 5.5vw;
+        line-height: 5.5vw;
+    }
+}
+
+/*  スマホ用レイアウト  */
+@media only screen and (max-width: 599px) {
+    #header,
+    .searchBox,
+    .list-left,
+    .blank {
+        display: none;
+    }
+    .drawer-hamburger {
+        position: absolute;
+        top: 5px;
+        display: block;
+        width: 30px;
+        height: 1px;
+        background-color: #fff;
+        border: 3px solid #556773;
+        border-radius: 50%;
+    }
+    .drawer-hamburger-icon{
+        margin-top: 5px;
+    }
+    .navigation {
+        text-align: center;
+    }
+    .navigation li a {
+        display: inline-block;
+        width: 100%;
+        height: 50px;
+        line-height: 50px;
+        text-decoration: none;
+        color: #fff;
+        font-weight: bold;
+        letter-spacing: 0.5rem;
+    }
+    .drawer-menu-item-1 {
+        background-color: #EFBC30;
+    }
+    .drawer-menu-item-2 {
+        background-color: #556773;
+    }
+
+    /* details__ttl */
+    .fundDetails__ttl {
+        font-size: 5vw;
+        line-height: 8vw;
+        margin-bottom: 60px;
+    }
+    .br::before {
+        content: "\A" ;
+        white-space: pre ;
+    }
+
+    /* graph */
+    .graph {
+        width: 90%;
+        height: 6vw;
+        line-height: 6.2vw;
+        font-size: 4vw;
+        margin-bottom: -20px;
+    }
+
+    /* recruit , details */
+    .recruit,
+    .details,
+    .status {
+        margin: 10vw auto;
+        line-height: 6.5vw;
+        font-size: 5vw;
+    }
+
+    .details-flex {
+        font-size: 7vw;
+        line-height: 14vw;
+    }
+    .details-flex span {
+        font-size: 4vw;
+    }
+    .details-flex p {
+        margin-left: 0;
+    }
+    .details-flex span:before {
+        bottom: -3vw;
+        width: 3.5vw;
+        height: 5px;
+    }
+
+    /* details__overview__list */
+    .details__overview__list {
+        padding: 10px 20px 0 0;
+        margin-top: 80px;
+        margin-bottom: 7vw;
+    }
+    .details__overview__list li {
+        width: 100%;
+        height: 9vw;
+        font-size: 3.5vw;
+        line-height: 9vw;
+    }
+
+    /* fundDetails__details */
+    .fundDetails__details {
+        display: block;
+    }
+    .fundDetails__details__item {
+        font-size: 2vw;
+    }
+    .recruitDetails-left,
+    .recruitDetails-right {
+        width: 95%;
+    }
+
+    /* recruitDetails-left */
+    .recruitDetails-left {
+        padding: 0;
+    }
+    .recruitDetails__section__ttl h2 {
+        font-size: 6vw;
+        letter-spacing: 4vw;
+        margin-bottom: 6vw;
+    }
+    .recruitDetails__section__ttl h2:before {
+        left: 45%;
+        bottom: -3vw;
+        width: 95%;
+        height: 1vw;
+    }
+    .recruitDetails__txt {
+        width: 90%;
+        font-size: 3vw;
+        line-height: 4.5vw;
+        margin-left: 0;
+    }
+    .recruitDetails__section {
+        width: 90%;
+        margin: 7vw 0;
+    }
+    .recruitDetails__section__ttl {
+        font-size: 5vw;
+    }
+    .recruitDetails__section__ttl h3 {
+        margin-top: 3vw;
+        margin-bottom: 5vw;
+        position: relative;
+    }
+    .recruitDetails__section__ttl h3:before {
+        bottom: -2.5vw;
+        width: 15%;
+        height: 0.6vw;
+        left: 8%;
+    }
+    .recruitDetails__section__ttl p {
+        font-size: 4vw;
+    }
+    .recruitDetails__section__txt {
+        font-size: 3vw;
+        line-height: 4.5vw;
+    }
+
+    /* recruitDetails-right */
+    .recruitDetails-right {
+        font-size: 3.5vw;
+        letter-spacing: 0.5vw;
+        padding-bottom: 90vw;
+    }
+    .recruitDetails__right__ttl {
+        margin-top: 80px;
+        font-size: 7vw;
+        margin-bottom: 2vw;
+        width: 95%;
+    }
+    .recruitDetails-right table {
+        width: 95%;
+    }
+    .recruitDetails-right tr {
+        height: 10vw;
+        line-height: 10vw;
+        font-weight: 400;
+    }
+    .recruitDetails-right th {
+        font-size: 4.5vw;
+    }
+
+    /* footer */
+    #footer {
+        height: 160px;
+    }
+    #footer .cont {
+        display: block;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+    #footer .c-btn {
+        margin: 0 auto;
+        width: 60%;
+        height: 20px;
+        line-height: 25px;
+        margin-bottom: 20px;
+    }
+    .copyright {
+        font-size: 9px;
+        letter-spacing: 2px;
+    }
+}
